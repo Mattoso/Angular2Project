@@ -1,0 +1,38 @@
+<h2 class="titulo">Login</h2>
+<div class="formulario">
+<form #f="ngForm" (ngSubmit)="login(email.value, password.value)">
+<div>
+    <label for="email">Email </label>
+    <br>
+    <input 
+    type="text" 
+    name="email" 
+    #email="ngModel"
+    placeholder="email@example.com" 
+    ngModel 
+    required 
+    #email="ngModel" 
+    pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+</div>
+<div class="erro" *ngIf="!email.valid && email.touched" >
+    Email é obrigatório
+</div>
+<div>
+    <label for="password">Password </label>
+    <br>
+    <input 
+    type="password" 
+    #password="ngModel"
+    name="password" 
+    ngModel 
+    required 
+    #password="ngModel">
+</div>
+<div class="erro"*ngIf="!password.valid && password.touched" >
+    Password é obrigatório
+</div>
+    <div class="botao">
+        <button type="submit" [disabled]="!f.valid">Login</button>
+    </div>
+    </form>
+   </div>

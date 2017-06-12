@@ -1,0 +1,22 @@
+<h2>
+  Welcome <span *ngIf="user">{{ user.name }}</span>
+</h2>  
+  <br>
+  <h3>Your account details:</h3>
+  <div class="tabela">
+   <table border="1px" cellpadding="5px" cellspacing="0">
+    <tr>
+    <th>USER ID</th>
+    <th>NAME</th> 
+    <th>EMAIL</th> 
+    <th>ROLE</th>
+    </tr>
+    <tr>
+    <td *ngIf="user">{{ user.id }}</td>
+    <td *ngIf="user">{{ user.name }}</td> 
+    <td *ngIf="user">{{ user.email }}</td> 
+    <td *ngIf="user">{{ user.role }}</td> 
+    </tr>    
+   </table>
+  </div>
+

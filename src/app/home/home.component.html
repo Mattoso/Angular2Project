@@ -1,0 +1,11 @@
+<h1> Welcome to Angular Project </h1>
+<div class="img-class">
+<img class="home" src="https://static.thinkster.io/topics/ang2.png">
+</div>
+<div class="button-section">
+<h2 *ngIf="loggedIn">
+Welcome back <span *ngIf="nome">{{ nome }}</span>
+</h2> 
+<button *ngIf="!loggedIn" type="submit" routerLink="/register" routerLinkActive="active">Let's Start</button>
+</div>
+

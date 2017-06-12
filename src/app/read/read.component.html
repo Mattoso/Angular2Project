@@ -1,0 +1,17 @@
+<h2 class="titulo">Users</h2>
+
+<div class="read">
+    <div>
+    <table border="1px" cellpadding="5px" cellspacing="0">
+    <tr>
+    <th>USER ID</th>
+    <th>NAME</th> 
+    <th>DETAILS</th> 
+    </tr>
+    <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td> 
+    <td><button type="submit" (click)="goToDetails(user.id)" routerLinkActive="active">Details</button></td> 
+    </tr>    
+    </table>
+</div>

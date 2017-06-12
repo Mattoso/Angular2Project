@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+th{
+    color:white;
+    background-color:#547980;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.tabela{
+     border-collapse: collapse;
+     margin:0 auto;    
+     width:65%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     margin-bottom: 440px;
+     margin-top: 50px;
+     text-align: center;
+}
+td:hover {background-color: #E8DDCB}
+
+h3{
+    text-align: center;
+}

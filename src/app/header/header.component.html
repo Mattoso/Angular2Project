@@ -1,0 +1,26 @@
+<header id="header">
+  <a class="home-link" routerLink="/home" routerLinkActive="active" (click)="scrollTop()">
+    <img class="logo" src="http://www.systemsfororder.com.au/wp-content/uploads/2014/12/Home_Icon1.png">
+  </a>
+  <div class="header-text">
+    <div class="left">
+      <span class="header-nav">
+          <a *ngIf="!loggedIn" routerLink="/login" routerLinkActive="active" (click)="scrollTop()">Login</a>
+          <button *ngIf="loggedIn" (click)="logout()" type="submit" routerLink="/login">Logout</button>
+        <span  class="divider">
+          |
+        </span>
+        <a *ngIf="!loggedIn" routerLink="/register" routerLinkActive="active" (click)="scrollTop()">Register</a>
+        <a *ngIf="loggedIn" routerLink="/read" routerLinkActive="active" (click)="scrollTop()">Users</a>
+        <span *ngIf="loggedIn" class="divider">
+          |
+        </span>
+        <a *ngIf="loggedIn" routerLink="/authHome" routerLinkActive="active" (click)="scrollTop()">My Profile</a>
+      </span>
+    </div>
+    <div class="info">
+      Built with <a href="https://cli.angular.io/" target="_blank">Angular CLI</a>
+    </div>
+  </div>
+</header>
+

@@ -1,0 +1,68 @@
+<h2 class="titulo">Register</h2>
+<div class="formulario">
+<form #f="ngForm" (ngSubmit)="onRegister(name.value, email.value, password.value, role.value)">
+<div class="form-group">
+    <label for="name">Name </label>
+    <br>
+    <input
+        ngModel
+        #name="ngModel" 
+        type="text"
+        name="name"
+        id="name" 
+        class="form-control"
+        placeholder="Full Name" 
+        required>
+</div>
+<div class="erro" *ngIf="!name.valid && name.touched" >
+    Nome é obrigatório
+</div>
+<div>
+    <label for="email">Email </label>
+    <br>
+    <input 
+        type="text" 
+        name="email" 
+        placeholder="email@example.com" 
+        ngModel 
+        required 
+        #email="ngModel" 
+        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+</div>
+<div class="erro" *ngIf="!email.valid && email.touched" >
+    Email é obrigatório
+</div>
+<div>
+    <label for="password">Password </label>
+    <br>
+    <input 
+        type="password" 
+        name="password" 
+        ngModel 
+        required 
+        #password="ngModel">
+</div>
+<div class="erro"*ngIf="!password.valid && password.touched" >
+    Password é obrigatório
+</div>
+<div>
+    <label for="role">Role </label>
+    <br>
+    <input
+        ngModel
+        #role="ngModel" 
+        role="text"
+        name="role"
+        id="role" 
+        placeholder="ex: admin" 
+        required>
+</div>
+<div class="erro"*ngIf="!role.valid && role.touched" >
+    Role é obrigatório
+</div>
+<div class="button">
+        <button type="submit" [disabled]="!f.valid">Register</button>
+    </div>
+</form>
+</div>
+

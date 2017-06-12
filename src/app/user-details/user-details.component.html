@@ -1,0 +1,17 @@
+<h2 *ngIf="user"class="titulo">{{ user.name }} details</h2>
+<div *ngIf="user" class="details">
+  <table border="1px" cellpadding="5px" cellspacing="0">
+    <tr>
+    <th>USER ID</th>
+    <th>NAME</th> 
+    <th>EMAIL</th> 
+    <th>ROLE</th> 
+    </tr>
+    <tr>
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td> 
+    <td>{{ user.email }}</td> 
+    <td>{{ user.role }}</td> 
+    </tr>    
+    </table>
+</div>

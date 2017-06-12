@@ -1,0 +1,83 @@
+form {
+    padding: 2em;
+    border-radius: 6px;
+    background-color: #547980;
+    border:2px solid #594F4F;
+}
+
+.formulario{
+     margin:0 auto;    
+     width:100%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     margin-bottom: 300px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    color:#D3D4D2;
+}
+
+input, textarea {
+
+    font: 1em sans-serif;
+    border-radius: 6px;
+    border:2px;
+    height: 30px;
+    width: 300px;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    border:2px solid #594F4F;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    border:2px solid #594F4F;
+    background-color: #ffffff;
+    border-radius: 6px;
+    height: 40px;
+    width: 300px;
+    cursor: pointer;   
+}
+
+button:hover {
+    background-color: #45ADA8; 
+    border:2px solid #45ADA8;
+    color: white;
+     transition-duration: 0.4s;
+}
+
+.titulo{
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+.ng-invalid.ng-touched:not(form){
+    border:1px solid red;
+
+}
+
+.erro{
+    color:#D3D4D2;
+    font-size: 10px;
+    position: relative;
+    left:100px;
+}
+

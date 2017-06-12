@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+.home{
+    padding: 2em;
+}
+
+button {
+    font-size: 18px;
+    border:2px solid #594F4F;
+    background-color: #ffffff;
+    display:block;
+    height: 100px;
+    width: 300px;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #547980; 
+    border:2px solid #547980;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.button-section{
+     margin:0 auto;    
+     width:90%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     padding:3em;
+}
+
+.img-class{
+    margin:0 auto;    
+     width:100%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+}
+h2{
+    text-align: center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
